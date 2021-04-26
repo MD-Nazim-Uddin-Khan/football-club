@@ -3,10 +3,6 @@ import BackgroundImage from '../BackgroundImage/BackgroundImage';
 import Cart from '../Cart/Cart';
 import './Home.css'
 
-// import background from '../../picture/download.jpg'
-
-
-
 const Home = () => {
     const [leagues, setLeagues] = useState([])
     useEffect(()=> {
@@ -19,7 +15,6 @@ const Home = () => {
         <div className="bkg-main ">
             <div className="container background-img">
 
-                {/* <img src={background} alt=""/> */}
                 <BackgroundImage/>
 
             <h3>Item : {leagues.length}</h3>

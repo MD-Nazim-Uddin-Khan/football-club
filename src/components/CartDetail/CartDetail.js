@@ -17,7 +17,6 @@ import { FaFacebook, FaYoutube, FaTwitter } from 'react-icons/fa';
 /* uprer header er backgroundImage */
 import '../BackgroundImage/BackgroundImage.css'
 
-
 const CartDetail = () => {
     const { dynamic } = useParams();
 
@@ -31,7 +30,6 @@ const CartDetail = () => {
             .then(data => setTeam(data.teams[0]))
     }, [dynamic])
 
-
     return (
         <div className='p-5 bkg-main'>
 
@@ -40,8 +38,6 @@ const CartDetail = () => {
                     <img src={team.strTeamBadge} alt="" />
                 </div>
             </div>
-
-
 
             <div className="bkg-detail d-flex justify-content-between">
                 <div className="text">
